@@ -259,8 +259,7 @@ def create_ensemble_model(models, X_train, y_train, X_val, y_val, y_val_orig):
             'R2': weighted_r2,
             'RMSE (original)': weighted_rmse_orig,
             'MAE (original)': weighted_mae_orig,
-            'R2 (original)': weighted_r2_orig,
-            'Weights': dict(zip(models.keys(), weights))
+            'R2 (original)': weighted_r2_orig
         },
         'Ensemble_Stacked': {
             'RMSE': stacked_rmse,
@@ -268,8 +267,7 @@ def create_ensemble_model(models, X_train, y_train, X_val, y_val, y_val_orig):
             'R2': stacked_r2,
             'RMSE (original)': stacked_rmse_orig,
             'MAE (original)': stacked_mae_orig,
-            'R2 (original)': stacked_r2_orig,
-            'Coefficients': dict(zip(models.keys(), stacked_model.coef_))
+            'R2 (original)': stacked_r2_orig
         }
     }
 
